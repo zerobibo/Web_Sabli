@@ -18,7 +18,7 @@ body {
 
 @font-face {
   font-family: Josefin Sans;
-  src: url(../font/Josefin_Sans_normal.woff2);
+  src: url(/assets/font/Josefin_Sans_normal.woff2);
 }
 /*components*/
 .menu_to {
@@ -216,7 +216,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../../assets/images/header.jpg");
+  background-image: url("/assets/images/header.jpg");
   position: relative;
 }
 @media (max-width: 768px) {
@@ -936,7 +936,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background-image: url("../../assets/images/looking_background.jpg");
+  background-image: url("/assets/images/looking_background.jpg");
 }
 @media (max-width: 768px) {
   .looking {
