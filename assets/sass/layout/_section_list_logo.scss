@@ -1,0 +1,28 @@
+.list_logo {
+    background-color: $color_chudao;
+    padding: 30px 0;
+    .logo_item {
+        text-align: center;
+        @include ipad {
+            width: 25%;
+        }
+        @include moblie {
+            width: 25%;
+        }
+        @include moblie_sm {
+            width: 50%;
+        }
+        img {
+            width: auto;
+            @include ipad {
+                width: 100%;
+            }
+            @include moblie {
+                width: 100%;
+            }
+            @include moblie_sm {
+                width: 100%;
+            }
+        }
+    }
+}

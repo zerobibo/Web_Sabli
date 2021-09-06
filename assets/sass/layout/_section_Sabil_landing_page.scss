@@ -1,0 +1,124 @@
+.Sabil_landing_page {
+    margin-top: $margin_section;
+    background-color: $color_chudao;
+    @include ipad {
+        margin-top: 20px;
+    }
+    @include moblie {
+        margin-top: 20px;
+    }
+    @include moblie_sm {
+        margin-top: 20px;
+    }
+    .landing_page_Main {
+        display: flex;
+        flex-direction: row;
+        padding: 0 15px;
+        width: 100%;
+        max-width: 1140px;
+        margin: auto;
+        @include laptop_sm {
+            padding: 0;
+        }
+        @include ipad {
+            padding: 0;
+        }
+        @include moblie {
+            flex-direction: column;
+            padding: 0;
+        }
+        @include moblie_sm {
+            flex-direction: column;
+            padding: 0;
+        }
+        .landing_page_img {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            .img4And3 {
+                height: -webkit-fill-available;
+                @include ipad {
+                    padding-top: 100%;
+                }
+            }
+        }
+        .ipad_re {
+            @include ipad {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        .landing_page_content {
+            font-family: $my_font;
+            color: $color_1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 45px;
+            @include ipad {
+                padding: 0;
+                margin: 0;
+            }
+            @include moblie {
+                padding: 0;
+                margin-top: 10px;
+            }
+            @include moblie_sm {
+                padding: 0;
+                margin-top: 10px;
+            }
+            h3 {
+                font-weight: 600;
+                margin-bottom: 5px;
+                font-size: 32px;
+                @include ipad {
+                    font-size: 20px;
+                }
+                @include moblie {
+                    font-size: 28px;
+                }
+                @include moblie_sm {
+                    font-size: 28px;
+                }
+            }
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+            .list_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 10px 0;
+                @include ipad {
+                    margin: 0;
+                }
+                @include moblie {
+                    margin: 10px 0;
+                }
+                @include moblie_sm {
+                    margin: 10px 0;
+                }
+                .content_item {
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 10px 0;
+                    .dau_Bang {
+                        font-size: 36px;
+                        position: absolute;
+                        top: -19px;
+                    }
+                    p {
+                        vertical-align: bottom;
+                        font-size: 14px;
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

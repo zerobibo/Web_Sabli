@@ -1,0 +1,21 @@
+@import url("/assets/css/home.css");
+
+/*boostrap CSS*/
+
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+/*font-awesome*/
+
+@import url("font-awesome.css");
+
+/*slick*/
+
+@import url("../css/slick.css");
+
+/*splide*/
+
+@import url("../css/splide.css");
+
+/*sweet_alert*/
+
+@import url("../css/sweet_alert.css");

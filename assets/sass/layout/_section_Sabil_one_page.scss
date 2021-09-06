@@ -1,0 +1,113 @@
+.Sabil_one_page {
+    margin-top: $margin_section;
+    @include ipad {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    @include moblie {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    @include moblie_sm {
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    .one_page_Main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        @include ipad {
+            flex-direction: row;
+        }
+        @include moblie {
+            flex-direction: column;
+        }
+        @include moblie_sm {
+            flex-direction: column;
+        }
+        .one_page {
+            width: 50%;
+            @include ipad {
+                width: 50%;
+            }
+            @include moblie {
+                width: 100%;
+            }
+            @include moblie_sm {
+                width: 100%;
+            }
+            .one_page_title {
+                font-family: $my_font;
+                h2 {
+                    color: $color_chudao;
+                    font-size: 32px;
+                    font-weight: bolder;
+                    @include ipad {
+                        font-size: 22px;
+                    }
+                    @include moblie {
+                        font-size: 22px;
+                    }
+                    @include moblie_sm {
+                        font-size: 22px;
+                    }
+                }
+            }
+            .one_page_content {
+                font-family: $my_font;
+                margin: 20px 0;
+                @include ipad {
+                    text-align: justify;
+                }
+                @include moblie {
+                    text-align: justify;
+                }
+                @include moblie_sm {
+                    text-align: justify;
+                }
+                p {
+                    font-size: 14px;
+                    color: $color_3;
+                }
+            }
+            .btn_learn {
+                @include button_Main($color_chudao);
+                font-size: 16px;
+                font-weight: bolder;
+                text-transform: capitalize;
+                width: 30%;
+                text-align: center;
+                padding: 6px 0;
+                &:hover {
+                    background-color: $color_4;
+                    border: 2px dotted $color_chudao;
+                    color: $color_chudao;
+                }
+                @include ipad {
+                    width: 50%;
+                }
+                @include moblie {
+                    width: 50%;
+                }
+                @include moblie_sm {
+                    width: 50%;
+                }
+            }
+        }
+        .one_page_img {
+            width: 50%;
+            @include ipad {
+                width: 50%;
+            }
+            @include moblie {
+                width: 100%;
+            }
+            @include moblie_sm {
+                width: 100%;
+            }
+            img {
+                width: 70%;
+            }
+        }
+    }
+}

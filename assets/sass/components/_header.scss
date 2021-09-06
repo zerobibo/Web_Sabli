@@ -1,0 +1,139 @@
+.header {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("/assets/images/header.jpg");
+    position: relative;
+    @include ipad {}
+    @include ipad {
+        background-position: 40% 50%;
+    }
+    @include moblie {
+        background-position: 40% 50%;
+    }
+    @include moblie_sm {
+        background-position: 40% 50%;
+    }
+    .header_Main {
+        background: rgba(21, 21, 21, 0.6);
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        @include ipad {
+            height: 500px;
+        }
+        @include moblie {
+            height: 650px;
+        }
+        @include moblie_sm {
+            height: 600px;
+        }
+        .content_Header {
+            width: 40%;
+            margin: auto;
+            text-align: center;
+            padding: 50px;
+            font-family: $my_font;
+            color: $color_1;
+            @include laptop_sm {
+                width: 70%;
+            }
+            @include ipad {
+                width: 80%;
+            }
+            @include moblie {
+                width: 100%;
+                padding: 10px;
+            }
+            @include moblie_sm {
+                width: 100%;
+                padding: 10px;
+            }
+            h2 {
+                font-weight: 600;
+                font-size: 40px;
+                @include ipad {
+                    font-size: 32px;
+                }
+                @include moblie {
+                    font-size: 28px;
+                }
+                @include moblie_sm {
+                    font-size: 28px;
+                }
+            }
+            h5 {
+                @include moblie {
+                    font-size: 18px;
+                }
+                @include moblie_sm {
+                    font-size: 18px;
+                }
+            }
+            .group_button {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                @include ipad {
+                    margin-top: 30px;
+                    align-items: center;
+                }
+                @include moblie {
+                    margin-top: 30px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @include moblie_sm {
+                    margin-top: 30px;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .btn_free {
+                    @include button_Main($color_chudao);
+                    text-transform: capitalize;
+                    font: {
+                        size: 14px;
+                        style: normal;
+                        weight: bolder;
+                    }
+                    padding: 10px;
+                    width: 30%;
+                    margin: 0 20px;
+                    @include ipad {
+                        width: 50%;
+                    }
+                    @include moblie {
+                        width: 50%;
+                    }
+                    @include moblie_sm {
+                        width: 50%;
+                    }
+                }
+                .btn_works {
+                    @include button_Main(none);
+                    text-transform: capitalize;
+                    font: {
+                        size: 14px;
+                        style: normal;
+                        weight: bolder;
+                    }
+                    padding: 10px;
+                    width: 30%;
+                    margin: 0 20px;
+                    &:hover {
+                        background-color: $color_chudao;
+                    }
+                    @include ipad {
+                        width: 50%;
+                    }
+                    @include moblie {
+                        width: 50%;
+                    }
+                    @include moblie_sm {
+                        width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

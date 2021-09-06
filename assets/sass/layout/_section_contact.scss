@@ -1,0 +1,116 @@
+.contact {
+    .contact_Main {
+        padding: $padding_section 0;
+        @include ipad {
+            padding: 20px 0;
+        }
+        @include moblie {
+            padding: 20px 0;
+        }
+        @include moblie_sm {
+            padding: 20px 0;
+        }
+        .contact_title {
+            @include title_section;
+            @include ipad {
+                width: 100%;
+            }
+            @include moblie {
+                width: 90%;
+            }
+            @include moblie_sm {
+                width: 100%;
+            }
+            h2 {
+                @include ipad {
+                    font-size: 22px;
+                }
+                @include moblie {
+                    margin: auto;
+                    width: 100%;
+                    font-size: 18px;
+                }
+                @include moblie_sm {
+                    margin: auto;
+                    width: 80%;
+                    font-size: 18px;
+                }
+            }
+        }
+        .contact_list_box {
+            margin-top: 40px;
+            @include ipad {
+                margin-top: 25px;
+            }
+            @include moblie {
+                margin-top: 0;
+                width: 80%;
+                margin: auto;
+            }
+            @include moblie_sm {
+                margin-top: 0;
+                width: 85%;
+            }
+            .box_rp {
+                width: 25%;
+                @include ipad {
+                    width: 50%;
+                    padding: 0 10px;
+                }
+                @include moblie {
+                    width: 100%;
+                }
+                @include moblie_sm {
+                    width: 100%;
+                }
+            }
+            .box_contact {
+                border-radius: 3px;
+                border: 3px solid $color_chudao;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+                padding: 20px;
+                font-family: $my_font;
+                @include ipad {
+                    margin: 10px 0;
+                    padding: 10px;
+                }
+                @include moblie {
+                    margin: 15px 0;
+                    padding: 20px;
+                }
+                @include moblie_sm {
+                    margin: 15px 0;
+                    padding: 20px;
+                }
+                .icon {
+                    color: $color_chudao;
+                    font-size: 36px;
+                    margin-bottom: 8px;
+                }
+                .icon_name {
+                    color: $color_2;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                }
+                p {
+                    color: $color_3;
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    @include ipad {
+                        font-size: 11px;
+                    }
+                    @include moblie {
+                        font-size: 14px;
+                    }
+                    @include moblie_sm {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,175 @@
+.what_we_do {
+    padding-top: $margin_section;
+    @include ipad {
+        padding-top: 20px;
+    }
+    @include moblie {
+        padding-top: 20px;
+    }
+    @include moblie_sm {
+        padding-top: 20px;
+    }
+    .what_we_do_Main {
+        .what_we_do_title {
+            @include title_section;
+            @include ipad {
+                width: 90%;
+            }
+            @include moblie {
+                width: 90%;
+            }
+            @include moblie_sm {
+                width: 100%;
+            }
+            h2 {
+                @include ipad {
+                    font-size: 22px;
+                }
+                @include moblie {
+                    font-size: 18px;
+                }
+                @include moblie_sm {
+                    font-size: 18px;
+                }
+            }
+        }
+        .what_we_do_business_Main {
+            display: flex;
+            flex-direction: row;
+            @include ipad {
+                flex-direction: row;
+                margin-top: 20px;
+                justify-content: space-between;
+            }
+            @include moblie {
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            @include moblie_sm {
+                flex-direction: column;
+                margin-top: 15px;
+            }
+            .what_we_do_business {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                @include ipad {
+                    width: 45%;
+                    text-align: justify;
+                    justify-content: flex-start;
+                }
+                @include moblie {
+                    width: 100%;
+                }
+                @include moblie_sm {
+                    width: 100%;
+                }
+                .business_title {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-end;
+                    text-align: start;
+                    i {
+                        font-size: 30px;
+                        transform: rotate(90deg);
+                    }
+                    h3 {
+                        margin-left: 10px;
+                        font-size: 22px;
+                        font-family: $my_font;
+                        font-weight: bolder;
+                        margin-bottom: 0;
+                        margin-left: 15px;
+                        @include ipad {
+                            font-size: 18px;
+                        }
+                        @include moblie {
+                            font-size: 18px;
+                        }
+                        @include moblie_sm {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .business_content {
+                    font-family: $my_font;
+                    color: $color_3;
+                    margin: 20px 0;
+                    @include ipad {
+                        margin: 20px 0;
+                        font-size: 14px;
+                    }
+                    @include moblie {
+                        margin: 10px 0;
+                        font-size: 14px;
+                    }
+                    @include moblie_sm {
+                        margin: 10px 0;
+                        font-size: 14px;
+                    }
+                    .text_first {
+                        font-weight: bolder;
+                    }
+                    .text_decoration {
+                        @extend .text_first;
+                        text-decoration: underline;
+                    }
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+                .btn_get {
+                    @include button_Main($color_chudao);
+                    width: 30%;
+                    text-align: center;
+                    padding: 6px 0;
+                    font-size: 16px;
+                    font-weight: bolder;
+                    &:hover {
+                        background-color: $color_1;
+                        border: 2px dotted $color_chudao;
+                        color: $color_chudao;
+                    }
+                    @include ipad {
+                        width: 50%;
+                    }
+                    @include moblie {
+                        width: 50%;
+                    }
+                    @include moblie_sm {
+                        width: 50%;
+                    }
+                }
+            }
+            .what_we_do_business_img {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                @include ipad {
+                    width: 50%;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @include moblie {
+                    width: 100%;
+                }
+                @include moblie_sm {
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                    height: 300px;
+                    @include ipad {
+                        height: auto;
+                    }
+                    @include moblie {
+                        height: auto;
+                    }
+                    @include moblie_sm {
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}

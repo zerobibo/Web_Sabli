@@ -1,0 +1,22 @@
+.reveal {
+    animation-timing-function: ease-out;
+    visibility: hidden;
+}
+
+.active {
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@keyframes reveal {
+    from {
+        transform: translateY(150px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

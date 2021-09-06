@@ -1,0 +1,73 @@
+.Sabil_video {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    @include ipad {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @include moblie {
+        display: flex;
+        align-items: center;
+    }
+    @include moblie_sm {
+        display: flex;
+        align-items: center;
+    }
+    .myVideo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        pointer-events: none;
+    }
+    .video_content {
+        text-align: center;
+        padding-top: 50px;
+        font-family: $my_font;
+        color: $color_1;
+        h3 {
+            font-weight: bolder;
+            font-size: 32px;
+            @include ipad {
+                font-size: 32px;
+            }
+            @include moblie {
+                font-size: 24px;
+            }
+            @include moblie_sm {
+                font-size: 24px;
+            }
+        }
+        .content_1 {
+            font-size: 14px;
+        }
+        .btn_Register {
+            @include button_Main($color_chudao);
+            width: 10%;
+            font-size: 16px;
+            padding: 6px 0;
+            text-transform: capitalize;
+            margin: 10px auto;
+            border: 2px solid $color_chudao;
+            &:hover {
+                background-color: rgba(255, 255, 255, 0);
+                color: $color_chudao;
+                border: 2px dotted $color_chudao;
+            }
+            @include ipad {
+                width: 30%;
+            }
+            @include moblie {
+                width: 50%;
+            }
+            @include moblie_sm {
+                width: 50%;
+            }
+        }
+    }
+}

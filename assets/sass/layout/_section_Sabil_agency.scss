@@ -1,0 +1,55 @@
+.Sabil_agency {
+    background-color: $color_chudao;
+    @include ipad {
+        margin-top: 20px;
+    }
+    @include moblie {
+        margin-top: 0;
+    }
+    @include moblie_sm {
+        margin-top: 0;
+    }
+    .agency_content {
+        padding: 20px 0;
+        font-family: $my_font;
+        color: $color_1;
+        @include ipad {
+            width: 100%;
+        }
+        @include moblie {
+            width: 90%;
+            margin: auto;
+        }
+        @include moblie_sm {
+            width: 100%;
+        }
+        h3 {
+            font-weight: bolder;
+            margin-bottom: 0;
+            @include ipad {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            @include moblie {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            @include moblie_sm {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            @include ipad {
+                font-size: 14px;
+            }
+            @include moblie {
+                font-size: 12px;
+            }
+            @include moblie_sm {
+                font-size: 12px;
+            }
+        }
+    }
+}

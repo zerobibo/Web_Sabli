@@ -1,0 +1,136 @@
+.out_services {
+    padding-top: $margin_section;
+    @include ipad {
+        padding-top: 20px;
+    }
+    @include moblie {
+        padding-top: 20px;
+    }
+    @include moblie_sm {
+        padding-top: 20px;
+    }
+    .services_Main {
+        .services_title {
+            @include title_section;
+            @include ipad {
+                width: 90%;
+            }
+            @include moblie {
+                width: 90%;
+            }
+            @include moblie_sm {
+                width: 100%;
+            }
+            h2 {
+                @include ipad {
+                    font-size: 22px;
+                }
+                @include moblie {
+                    font-size: 18px;
+                }
+                @include moblie_sm {
+                    font-size: 18px;
+                }
+            }
+        }
+        .list_box {
+            margin-top: 70px;
+            .boxs {
+                display: flex;
+                @include ipad {
+                    flex-direction: row;
+                }
+                @include moblie {
+                    flex-direction: column;
+                }
+                @include moblie_sm {
+                    flex-direction: column;
+                }
+            }
+            @include laptop_sm {
+                margin-top: 20px;
+                width: 100%;
+            }
+            @include ipad {
+                margin-top: 25px;
+                width: 100%;
+            }
+            @include moblie {
+                margin-top: 15px;
+                width: 100%;
+            }
+            @include moblie_sm {
+                margin-top: 15px;
+                width: 100%;
+            }
+            .box_item {
+                position: relative;
+                border: 3px solid $color_chudao;
+                border-radius: 8px;
+                font-family: $my_font;
+                justify-content: center;
+                padding: 40px 20px 20px 20px;
+                @include laptop_sm {
+                    padding: 40px 10px 20px 10px;
+                    margin: 20px 20px;
+                }
+                @include ipad {
+                    padding: 40px 10px 20px 10px;
+                    margin: 20px 10px;
+                }
+                @include moblie {
+                    padding: 40px 10px 20px 10px;
+                    margin: 20px 10px;
+                }
+                @include moblie_sm {
+                    padding: 40px 10px 20px 10px;
+                    margin: 20px 10px;
+                }
+                display: flex;
+                flex-direction: column;
+                margin: 20px 20px;
+                .box_title {
+                    color: $color_2;
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        font-style: normal;
+                        text-transform: capitalize;
+                    }
+                }
+                .box_content {
+                    color: $color_3;
+                    font-size: 14px;
+                    @include ipad {
+                        font-size: 14px;
+                    }
+                    @include moblie {
+                        font-size: 14px;
+                    }
+                    @include moblie_sm {
+                        font-size: 14px;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+                .bong_icon {
+                    position: absolute;
+                    background-color: $color_chudao;
+                    border-radius: 50%;
+                    width: 3em;
+                    height: 3em;
+                    border: none;
+                    top: -25px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i {
+                        color: $color_1;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+}

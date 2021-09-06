@@ -1,0 +1,110 @@
+@mixin canchinh_box($value) {
+    -webkit-box-align: $value;
+    /*điều chỉnh thành phần trong box*/
+    align-items: $value;
+    /*điều chỉnh vị trí các item trong box*/
+    -webkit-box-pack: $value;
+    justify-content: $value;
+}
+
+@mixin banner_item($value) {
+    margin-bottom: $value;
+    padding-bottom: $value;
+    border-bottom: $value;
+}
+
+@mixin button_Main($value) {
+    background-color: $value;
+    color: $color_1;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-family: $my_font;
+    cursor: pointer;
+}
+
+@mixin title_section {
+    text-align: center;
+    font-family: $my_font;
+    width: 50%;
+    margin: auto;
+    h5 {
+        color: $color_3;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    h2 {
+        color: $color_2;
+        font-weight: 600;
+        font-size: 30px;
+    }
+}
+
+@mixin translate($x, $y) {
+    transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+}
+
+@mixin objectFit($value) {
+    object-fit: $value;
+    -webkit-object-fit: $value;
+    -moz-object-fit: $value;
+    -ms-object-fit: $value;
+    -o-object-fit: $value;
+}
+
+@mixin limit_row ($number) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: $number;
+}
+
+
+/*Responsive*/
+
+// Màn hình, thiết bị nhỏ < 320px 
+$moblie_sm_width: 320px;
+// Màn hình moblie thông thường < 480px
+$moblie_width:480px;
+//Màn hình ipad < 768px 
+$ipad_width:768px;
+//Màn hình nhỏ, laptop < 1024px 
+$laptop_sm_width:1024px;
+//Màn hình laptop thông thường < 1200px 
+$laptop_width:1200px;
+//Màn hình lớn > 1200px 
+$laptop_lg_width:1201px;
+
+/*-------------------------------------------------------*/
+
+@mixin moblie_sm {
+    @media (max-width: #{$moblie_sm_width}) {
+        @content;
+    }
+}
+
+@mixin moblie {
+    @media (max-width: #{$moblie_width}) {
+        @content;
+    }
+}
+
+@mixin ipad {
+    @media (max-width: #{$ipad_width}) {
+        @content;
+    }
+}
+
+@mixin laptop_sm {
+    @media (max-width: #{$laptop_sm_width}) {
+        @content;
+    }
+}

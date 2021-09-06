@@ -1,0 +1,104 @@
+.looking {
+    margin-top: $padding_section;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-image: url("/assets/images/looking_background.jpg");
+    @include ipad {
+        margin-top: 20px;
+    }
+    @include moblie {
+        margin-top: 20px;
+    }
+    @include moblie_sm {
+        margin-top: 20px;
+    }
+    .looking_background {
+        padding: 50px 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        .looking_Main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            @include ipad {
+                flex-direction: row;
+            }
+            @include moblie {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            @include moblie_sm {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .looking_title {
+                width: 60%;
+                font-family: $my_font;
+                color: $color_1;
+                @include ipad {
+                    width: 100%;
+                }
+                @include moblie {
+                    width: 100%;
+                }
+                @include moblie_sm {
+                    width: 100%;
+                }
+                p {
+                    @include ipad {
+                        width: 90%;
+                    }
+                    @include moblie {
+                        width: 90%;
+                    }
+                    @include moblie_sm {
+                        width: 90%;
+                    }
+                }
+                h2 {
+                    font-size: 28px;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+                    @include ipad {
+                        line-height: 45px;
+                        font-size: 24px;
+                    }
+                    @include moblie {
+                        line-height: 45px;
+                    }
+                    @include moblie_sm {
+                        line-height: 45px;
+                    }
+                }
+            }
+            .btn_learn {
+                @include button_Main($color_chudao);
+                font-size: 16px;
+                font-weight: bolder;
+                text-transform: capitalize;
+                width: 12%;
+                text-align: center;
+                padding: 6px 0;
+                &:hover {
+                    background-color: $color_4;
+                    border: 2px dotted $color_chudao;
+                    color: $color_chudao;
+                }
+                @include laptop_sm {
+                    width: 15%;
+                }
+                @include ipad {
+                    width: 25%;
+                }
+                @include moblie {
+                    width: 50%;
+                }
+                @include moblie_sm {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

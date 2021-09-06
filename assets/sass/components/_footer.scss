@@ -1,0 +1,173 @@
+.footer {
+    background-color: $color_2;
+    .footer_Main {
+        font-family: $my_font;
+        padding: 30px 0;
+        @include ipad {
+            padding: 0;
+        }
+        @include moblie {
+            padding: 0;
+        }
+        @include moblie_sm {
+            padding: 0;
+        }
+        .footer_left {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            @include ipad {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            @include moblie {
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: flex-start;
+            }
+            @include moblie_sm {
+                justify-content: flex-start;
+                align-items: flex-start;
+                text-align: flex-start;
+            }
+            p {
+                color: $color_3;
+                font-size: 14px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+                @include ipad {
+                    width: 75%;
+                }
+                @include moblie {
+                    width: 100%;
+                }
+                @include moblie_sm {
+                    width: 100%;
+                }
+            }
+            .socical_icon {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                color: $color_1;
+                font-size: 18px;
+                width: 50%;
+                @include ipad {
+                    width: 30%;
+                }
+                @include moblie {
+                    width: 70%;
+                }
+                @include moblie_sm {
+                    width: 70%;
+                }
+            }
+        }
+        .footer_center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            @include ipad {
+                text-align: center;
+            }
+            @include moblie {
+                text-align: start;
+            }
+            @include moblie_sm {
+                text-align: start;
+            }
+            .footer_center_name {
+                color: $color_1;
+                text-transform: uppercase;
+                font-weight: 650;
+                font-size: 16px;
+            }
+            .footer_center_content {
+                color: $color_3;
+                .link {
+                    display: flex;
+                    flex-direction: column;
+                    a {
+                        color: $color_3;
+                    }
+                }
+            }
+            .col_mb {
+                @include ipad {
+                    width: 50%;
+                }
+                @include moblie {
+                    width: 50%;
+                }
+                @include moblie_sm {
+                    width: 50%;
+                }
+            }
+        }
+        .footer_right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            @include ipad {
+                text-align: center;
+            }
+            @include moblie {
+                text-align: start;
+            }
+            @include moblie_sm {
+                text-align: start;
+            }
+            .footer_right_name {
+                color: $color_1;
+                text-transform: uppercase;
+                font-weight: 650;
+                font-size: 16px;
+            }
+            .logo_pay {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                @include ipad {
+                    width: 50%;
+                    margin: auto;
+                }
+                @include moblie {
+                    width: 100%;
+                }
+                @include moblie_sm {
+                    width: 100%;
+                }
+            }
+            p {
+                margin: 0;
+                color: $color_3;
+                font-size: 14px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+.end {
+    background-color: #0098db;
+    padding: 5px 0;
+    text-align: center;
+    @include moblie {
+        padding: 10px;
+    }
+    @include moblie_sm {
+        padding: 10px;
+    }
+    img {
+        width: 30%;
+        @include moblie {
+            width: 100%;
+        }
+        @include moblie_sm {
+            width: 100%;
+        }
+    }
+}

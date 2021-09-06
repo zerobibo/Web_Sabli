@@ -1,0 +1,168 @@
+.menu_to {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    .menu_Header {
+        background: $color_2;
+        position: relative;
+        z-index: 1;
+        .menu_Header_nen {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+            @include laptop_sm {
+                justify-content: space-between;
+            }
+            @include ipad {
+                justify-content: center;
+                position: relative;
+                padding: 5px;
+            }
+            @include moblie {
+                justify-content: center;
+                position: relative;
+                padding: 5px;
+            }
+            @include moblie_sm {
+                justify-content: center;
+                position: relative;
+                padding: 5px;
+            }
+            .logo_Img {
+                width: 117px;
+                height: 47px;
+            }
+            .menu_Main {
+                @include ipad {
+                    display: none;
+                }
+                @include moblie {
+                    display: none;
+                }
+                @include moblie_sm {
+                    display: none;
+                }
+                .list_Menu {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    .menu_item {
+                        margin: 0 10px;
+                        .menu_item_link {
+                            text-decoration: none;
+                            color: $color_1;
+                            text-transform: uppercase;
+                            line-height: $my_line_height;
+                            font: {
+                                family: $my_font;
+                                size: 11px;
+                                weight: bolder;
+                            }
+                        }
+                        .bt_sign_Up {
+                            line-height: $my_line_height;
+                            border: none;
+                            padding: 10px 25px;
+                            vertical-align: -10px;
+                            width: 100%;
+                            font: {
+                                family: $my_font;
+                                size: 14px;
+                                weight: bolder;
+                            }
+                            outline: none;
+                            color: $color_1;
+                            background-color: $color_chudao;
+                            border-radius: 20px;
+                            border: 2px solid $color_chudao;
+                            &:hover {
+                                background-color: $color_2;
+                                color: $color_chudao;
+                                border: 2px dotted $color_chudao;
+                            }
+                        }
+                    }
+                }
+            }
+            .icon_menu_mb {
+                display: none;
+                color: $color_1;
+                position: absolute;
+                font-size: 22px;
+                left: 0;
+                @include ipad {
+                    display: block;
+                }
+                @include moblie {
+                    display: block;
+                }
+                @include moblie_sm {
+                    display: block;
+                }
+            }
+        }
+    }
+    .menu_reponsive {
+        display: none;
+        overflow-y: auto;
+        width: 100%;
+        position: fixed;
+        @include laptop_sm {
+            display: none;
+        }
+        @include ipad {
+            display: block;
+            background-color: $color_2;
+            padding: 20px;
+            transform: translate(0px, -400px);
+            transition: all 0.3s ease-out;
+            opacity: 0;
+            height: 60%;
+        }
+        @include moblie {
+            display: block;
+            background-color: $color_2;
+            padding: 20px;
+            transform: translate(0px, -400px);
+            transition: all 0.3s ease-out;
+            opacity: 0;
+            height: auto;
+        }
+        @include moblie_sm {
+            display: block;
+            background-color: $color_2;
+            padding: 20px;
+            transform: translate(0px, -400px);
+            transition: all 0.3s ease-out;
+            opacity: 0;
+            height: auto;
+        }
+        .list {
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 0;
+            .item {
+                font-family: $my_font;
+                font-weight: 600;
+                font-style: normal;
+                text-transform: uppercase;
+                margin: 10px 0;
+                a {
+                    color: $color_1;
+                }
+            }
+        }
+    }
+    .active_menu {
+        transform: translate(0px, 0px);
+        opacity: 1;
+    }
+}
