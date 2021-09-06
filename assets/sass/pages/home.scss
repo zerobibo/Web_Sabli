@@ -1,14 +1,14 @@
 /* variables*/
 
-@import '../abstracts/variables';
+@import './abstracts/variables';
 
 /* minxins*/
 
-@import '../abstracts/mixins';
+@import './abstracts/mixins';
 
 /* functions*/
 
-@import '../abstracts/functions';
+@import './abstracts/functions';
 
 /*------------------------------------------------------------------------*/
 
@@ -24,26 +24,26 @@ body {
 
 /*components*/
 
-@import '../components/menu';
-@import '../components/header';
-@import '../components/footer';
-@import '../components/khungAnh';
-@import '../components/effect';
+@import './components/menu';
+@import './components/header';
+@import './components/footer';
+@import './components/khungAnh';
+@import './components/effect';
 
 /*layout*/
 
-@import '../layout/section_list_logo';
-@import '../layout/section_out_services';
-@import '../layout/section_looking';
-@import '../layout/section_what_we_do';
-@import '../layout/section_Sabil_landing_page';
-@import '../layout/section_Sabil_one_page';
-@import '../layout/section_reviews';
-@import '../layout/section_pricing';
-@import '../layout/section_Sabil_agency';
-@import '../layout/section_faq';
-@import '../layout/section_Sabil_video';
-@import '../layout/section_contact';
-@import '../layout/section_map';
+@import './layout/section_list_logo';
+@import './layout/section_out_services';
+@import './layout/section_looking';
+@import './layout/section_what_we_do';
+@import './layout/section_Sabil_landing_page';
+@import './layout/section_Sabil_one_page';
+@import './layout/section_reviews';
+@import './layout/section_pricing';
+@import './layout/section_Sabil_agency';
+@import './layout/section_faq';
+@import './layout/section_Sabil_video';
+@import './layout/section_contact';
+@import './layout/section_map';
 
 /*pages*/
