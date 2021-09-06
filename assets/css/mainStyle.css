@@ -6,16 +6,16 @@
 
 /*font-awesome*/
 
-@import url("font-awesome.css");
+@import url("./font-awesome.css");
 
 /*slick*/
 
-@import url("../css/slick.css");
+@import url("./slick.css");
 
 /*splide*/
 
-@import url("../css/splide.css");
+@import url("./splide.css");
 
 /*sweet_alert*/
 
-@import url("../css/sweet_alert.css");
+@import url("./sweet_alert.css");
